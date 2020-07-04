@@ -1,0 +1,24 @@
+.footer {
+  background-color: $footer-background-color;
+  color: $primary-white-color;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// .copyright {
+//   padding-bottom: 21px;
+//   padding-top: 18px;
+//   margin: 0px;
+
+//   color: rgba(255, 255, 255, 0.4);
+//   font-weight: 400;
+//   font-size: 12px;
+//   line-height: 2;
+//   text-align: center;
+// }

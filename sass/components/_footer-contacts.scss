@@ -1,0 +1,39 @@
+.footer-contacts {
+  padding-right: 69px;
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
+
+.footer-address {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.list-contacts {
+  padding-left: 0px;
+  margin: 0px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.list-contacts .item {
+  margin-bottom: 9px;
+}
+
+.list-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $transition;
+
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
+}

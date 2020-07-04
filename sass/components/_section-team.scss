@@ -1,0 +1,109 @@
+.section-team {
+  background: $secondary-background-color;
+}
+
+.section-team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.social-link {
+  &-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0px;
+    color: #afb1b8;
+
+    transition: background-color $transition;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: currentColor;
+    transition: background-color $transition;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 32px;
+    margin: 0px;
+  }
+
+  &-item {
+    padding: 0px;
+  }
+}
+
+.team {
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  &-list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  &-photo {
+    margin-bottom: 30px;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-item {
+    padding-bottom: 24px;
+
+    background: $primary-white-color;
+
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  &-name {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding: 0px;
+
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  &-position {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}

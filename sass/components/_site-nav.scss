@@ -1,0 +1,57 @@
+.site-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+
+    .item:not(:last-child) {
+      margin-right: 47px;
+    }
+  }
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 8px;
+
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+  transition: color $transition;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    position: relative;
+  }
+
+  &.current {
+    position: relative;
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-size: 14px;
+    line-height: 1.14px;
+    margin-left: auto;
+  }
+}
+
+.item .current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}

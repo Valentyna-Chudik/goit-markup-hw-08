@@ -1,0 +1,47 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: $mainFont;
+  letter-spacing: 0.03em;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
