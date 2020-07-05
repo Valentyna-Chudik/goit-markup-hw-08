@@ -1,10 +1,10 @@
 .section-task {
-  padding-top: 60px;
-  // padding-bottom: 60px;
-
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: none;
+  z-index: 2;
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    // padding-bottom: 94px;
+    display: block;
   }
 }
 
